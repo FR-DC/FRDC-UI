@@ -10,8 +10,8 @@ const votingdata = {
 				"height": 250
 			},
 			"description": "description1",
-			"upvotes": 100,
-			"downvotes": 10
+			"upvotes": 0,
+			"downvotes": 0
 		},
 		{
 			"url": "https://loremflickr.com/640/360",
@@ -23,8 +23,8 @@ const votingdata = {
 				"height": 180
 			},
 			"description": "description2",
-			"upvotes": 300,
-			"downvotes": 5
+			"upvotes": 0,
+			"downvotes": 0
 		},
 		{
 			"url": "https://loremflickr.com/640/360",
@@ -36,8 +36,8 @@ const votingdata = {
 				"height": 350
 			},
 			"description": "description3",
-			"upvotes": 250,
-			"downvotes": 20
+			"upvotes": 0,
+			"downvotes": 0
 		}
 	]
 }
