@@ -2,6 +2,7 @@ const votingdata = {
 	"images": [
 		{
 			"url": "https://loremflickr.com/640/360",
+			"caseId": 0,
 			"imgId": "img001",
 			"boundingBox": {
 				"x": 100,
@@ -15,6 +16,7 @@ const votingdata = {
 		},
 		{
 			"url": "https://loremflickr.com/640/360",
+			"caseId": 1,
 			"imgId": "img002",
 			"boundingBox": {
 				"x": 50,
@@ -28,6 +30,7 @@ const votingdata = {
 		},
 		{
 			"url": "https://loremflickr.com/640/360",
+			"caseId": 2,
 			"imgId": "img003",
 			"boundingBox": {
 				"x": 200,
