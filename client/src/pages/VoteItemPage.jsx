@@ -3,17 +3,25 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom"; 
 import votingdata from "../storage/votingdata";
 
-async function temporaryQuery(){
-	console.log(2);
-	const data = votingdata.images.find(el => el.caseId === 2);
-	console.log(data);
-	return data; 
+async function temporaryQuery(cid){
+
+	// const data = votingdata.images.find(el => el.caseId === 0);
+	// console.log(data);
+	// return data; 
+	var data = null; 
+	Object.keys(votingdata['images']).forEach(key=>{
+		if (votingdata['images'][key]['caseId'].toString()=== cid){
+			console.log(cid);
+			data = votingdata['images'][key];
+		}
+	});
+	console.log("data", data);
+	return data
 }
 const VoteItemPage = () => {
+	
+	const [voteItemInfo, setVoteItemInfo] = useState({});
 	const {caseId} = useParams(); 
-	console.log(`caseId ${caseId}`)
-	const [voteItemInfo, setVoteItemInfo] = useState();
-
 
 
 	//TODO: add backend logic to query info based on caseId
@@ -31,12 +39,16 @@ const VoteItemPage = () => {
 	// }, [caseId]);
 	// console.log(voteItemInfo);
 
+	
+
+
+
+
 	useEffect(() => {
     async function fetchData() {
-			const votingdata = JSON.parse(votingdata);
-			console.log(votingdata);
-      const info = votingdata.images.find(image => image.caseId === 2);
-      console.log("Fetched info:", info); // Add this line to log the fetched info
+			console.log(caseId);
+			const info = await temporaryQuery(caseId);
+			console.log('info', info);
       setVoteItemInfo(info);
     }
 
@@ -49,6 +61,7 @@ const VoteItemPage = () => {
 		<div>
 		<Header headerTitle="Item"/>
 		<h1>vote item {caseId}</h1>
+		<p>{voteItemInfo.description}</p>
 		<img src={`${voteItemInfo.url}`} alt={`${voteItemInfo.alt}`} />
 		</div>
 	)
