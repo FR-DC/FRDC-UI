@@ -5,7 +5,7 @@ export default function Navbar(){
 		<nav className="flex items-center justify-between flex-wrap bg-green-200 p-2">
   <div className="flex items-center flex-shrink-0 text-black">
     <Link to="/dashboard">
-    <img className="p-1" src="/${process.env.PUBLIC_URL}/tree.png" alt="tree-logo" height="54px" width="54px"/>
+    <img className="p-1" src={process.env.PUBLIC_URL + '/tree.png'} alt="tree-logo" height="54px" width="54px"/>
      </Link>
     <span className="md:visible m-2 font-mono text-2xl tracking-normal"><p className="invisible md:visible">FRDC</p></span>
    
