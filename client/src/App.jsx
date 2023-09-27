@@ -11,7 +11,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="FRDC-UI">
       <Routes>
         <Route path="/" element={<Login />}/>
         <Route path="/voting" element={<VotingPage/>}/>
