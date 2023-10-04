@@ -1,0 +1,26 @@
+{
+    "InputImagesVotes": [
+        {
+            "uuid": "f06dee25-fc7b-466c-ad13-a04fa4c290da",
+            "bounding_box": {
+            "maxr": "1221",
+            "minr": "572",
+            "maxc": "4700",
+            "minc": "4249"
+            },
+            "srccode": "CN10MAY2021",
+            "numApprovals": 4
+        },   
+        {
+            "uuid": "b9a1750d-568f-4ca0-aa91-ef3426137581",
+            "bounding_box": {
+            "maxr": "1138",
+            "minr": "636",
+            "maxc": "4306",
+            "minc": "3914"
+            },
+            "srccode": "CN10MAY2021",
+            "numApprovals": 0
+        }   
+      ]
+    }

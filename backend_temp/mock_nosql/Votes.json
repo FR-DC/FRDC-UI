@@ -1,0 +1,14 @@
+{
+	"Votes": [
+			{
+		  "approved": true,
+		  "timestamp": "2023-10-05T14:30:00Z",
+		  "inputImage": {
+		    "uuid": "f06dee25-fc7b-466c-ad13-a04fa4c290da"
+		  },
+		  "user": {
+		    "userid": "0123456"
+		  }
+		}
+	]
+}
