@@ -1,0 +1,34 @@
+<View>
+  <Header>FRDC</Header>
+  <Image name="img" value="$url" zoom="true" zoomControl="true"/>
+  <Header size="8">Select Quality</Header>
+  <PolygonLabels name="labels" toName="img" strokewidth="2" opacity="0.1">
+      <Label value="Good" background="green"/>
+      <Label value="OK" background="orange"/>
+      <Label value="Bad" background="red"/>
+  </PolygonLabels>
+  <View visibleWhen="region-selected">
+    <Header>Submitted By:</Header>
+    	<View>
+      		<Filter name="filter" toName="Team" hotkey="shift+f" minlength="0" placeholder="type team name"/>
+          	<Labels name="Team" toName="img" showInline="false" perRegion="true">
+              <Label value="EngineeringTeam"/>
+              <Label value="EcologyTeam"/>
+          </Labels>
+    		 <Header size="7">UserID:</Header>
+    		<TextArea name="userid" toName="img" placeholder="userID" perRegion="true"/>
+    	</View>
+
+    <Header>Species:</Header>
+    <View>
+      <Filter name="filterSpecies" toName="Species" hotkey="shift+f" minLength="0" placeholder="type species name"/>
+    <Choices name="Species" toName="img" choice="single-radio" perRegion="true">
+      <Choice alias="sA" value="speciesA"/>
+      <Choice alias="sB" value="speciesB"/>
+      <Choice alias="sC" value="speciesC"/>
+      <Choice alias="U" value="Unknown"/>
+    </Choices>
+    </View>
+    <TextArea name="text" toName="img" placeholder="Comments" perRegion="true"/>
+  </View>
+</View>
