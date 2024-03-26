@@ -64,11 +64,13 @@
         <Label value="EcologySubmit"/>
       </Labels>
       <Header size="7">UserID (Submit):</Header>
-      <!--TextArea required="false" name="SubmitUserId" toName="image" placeholder="userID" perRegion="true"/ -->
-      <Choices required="true" name="SubmitUserIdChoice" toName="Team" perRegion="true" choice="single-radio" visibleWhen="region-selected">
+      <TextArea required="false" name="SubmitUserId" 
+                toName="image" placeholder="userID" 
+                perRegion="true"/>
+      <!--Choices required="true" name="SubmitUserIdChoice" toName="Team" perRegion="true" choice="single-radio" visibleWhen="region-selected">
       <Choice value="jjsit"/>
       <Choice value="shyap"/>
-  	</Choices>
+  	</Choices-->
     </View>
     
     <Header>Checked By (Team):</Header> 
